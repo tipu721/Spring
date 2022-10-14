@@ -1,0 +1,16 @@
+package com.tipu;
+
+/**
+ * Hello world!
+ *
+ */
+public class App {
+	public static void main(String[] args) {
+		
+		
+		BeanFactory
+		
+		Vehicle obj = getBean("vehicle");
+		obj.drive();
+	}
+}

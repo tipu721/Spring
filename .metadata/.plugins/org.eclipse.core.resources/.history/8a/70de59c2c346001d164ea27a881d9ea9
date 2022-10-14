@@ -1,0 +1,10 @@
+package com.tipu;
+
+public class Bike {
+	
+	public void drive() {
+		
+		System.out.println("Drive Bike Carefullly");
+	}
+
+}
