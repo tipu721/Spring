@@ -1,0 +1,24 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Good Thymes Virtual Grocery</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+
+<div>
+    <form action="/programmerInfo" method="post">
+        <label>Your Name</label><br>
+        <text th:text="${name}"></text><br>
+        <label>Enter Your Age</label><br>
+        <text th:text="${age}"></text>
+    </form>
+</div>
+
+</body>
+
+</html>
