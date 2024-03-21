@@ -21,6 +21,8 @@ public class AuthController {
 
     @GetMapping("/welcome")
     String wellcome() {
+
+
         return "welcome";
     }
 
