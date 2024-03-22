@@ -4,18 +4,22 @@ package com.tipu.spring_mvc.controller;
 import com.tipu.spring_mvc.model.Student;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
+@ControllerAdvice //to find @ModelAttribute from  others controllers
 public class MvcController {
 
 
 
     //Method Level Method Attribute
+
+    @ModelAttribute
+    void welcome(Model model){
+        model.addAttribute("msg", "Welcome to Spring Boot!");
+
+    }
 
     @RequestMapping("/addProgrammer")
     String addProgrammer(){
