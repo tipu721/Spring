@@ -8,5 +8,7 @@ import java.util.List;
 
 @Repository
 public interface StudentRepo extends JpaRepository<Student,Long> {
-    List<Student> findByAge(Integer age);
+
+    //Query DSL
+    List<Student> findByAgeOrderByName(Integer age);
 }
