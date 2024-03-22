@@ -10,4 +10,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/User")
 public class UserController {
 
+    @RequestMapping("/admin")
+    String admin(){
+        return "Welcome to admin page";
+    }
+    @RequestMapping("/user")
+    String user(){
+        return "Welcome to user page";
+    }
+
 }
