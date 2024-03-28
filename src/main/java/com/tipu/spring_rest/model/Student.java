@@ -1,4 +1,4 @@
-package com.tipu.spring_data_jpa.model;
+package com.tipu.spring_rest.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

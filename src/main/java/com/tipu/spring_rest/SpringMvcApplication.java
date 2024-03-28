@@ -1,4 +1,4 @@
-package com.tipu.spring_data_jpa;
+package com.tipu.spring_rest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

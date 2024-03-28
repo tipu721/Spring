@@ -1,6 +1,6 @@
-package com.tipu.spring_data_jpa.repository;
+package com.tipu.spring_rest.repository;
 
-import com.tipu.spring_data_jpa.model.Student;
+import com.tipu.spring_rest.model.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
