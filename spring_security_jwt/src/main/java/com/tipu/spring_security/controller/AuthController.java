@@ -37,4 +37,9 @@ public class AuthController {
         return new ResponseEntity<>("User signed-in scuccessfully", HttpStatus.OK);
     }
 
+    @GetMapping("/logout-success")
+    ResponseEntity<String> logout(){
+        return new ResponseEntity<>("Successfully logout", HttpStatus.OK);
+    }
+
 }
