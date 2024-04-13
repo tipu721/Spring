@@ -16,7 +16,6 @@ public class TestController {
         return "Welcome to admin page";
     }
     @RequestMapping("/user")
-    @PreAuthorize("hasRole('USER')")
     String user(){
         return "Welcome to user page";
     }
