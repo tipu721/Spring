@@ -10,11 +10,11 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table("user")
+@Table("Users")
 public class User {
 
     @Id
-    private String id;
+    private Integer id;
     private String username;
     private String password;
 
