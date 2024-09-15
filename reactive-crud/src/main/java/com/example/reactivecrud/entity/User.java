@@ -6,11 +6,10 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Table;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-
 @Data
+@Table("Users")
 @AllArgsConstructor
 @NoArgsConstructor
-@Table("Users")
 public class User {
 
     @Id
@@ -21,5 +20,4 @@ public class User {
     public void setPassword(String password) {
         this.password = new BCryptPasswordEncoder().encode(password);
     }
-
 }

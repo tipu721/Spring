@@ -20,7 +20,7 @@ public class JWTUtil {
 
     @PostConstruct
     public void init() {
-        this.key = Keys.secretKeyFor(SignatureAlgorithm.HS256);
+        this.key = Keys.secretKeyFor(SignatureAlgorithm.HS256); // Creates a secure key
     }
 
     public String extractUsername(String token) {

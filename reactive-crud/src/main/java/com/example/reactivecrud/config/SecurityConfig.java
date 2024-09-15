@@ -1,6 +1,5 @@
 package com.example.reactivecrud.config;
 
-
 import com.example.reactivecrud.service.JWTAuthenticationManager;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -20,11 +19,10 @@ public class SecurityConfig {
 
     @Bean
     public SecurityWebFilterChain securityWebFilterChain(ServerHttpSecurity http) {
-        
         return http
                 .csrf().disable()
                 .authorizeExchange()
-                .pathMatchers("/task/**").permitAll()
+                .pathMatchers("/api/auth/**").permitAll()
                 .anyExchange().authenticated()
                 .and()
                 .authenticationManager(authenticationManager)
