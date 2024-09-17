@@ -34,7 +34,7 @@ public class JwtReactiveAuthenticationManager implements ReactiveAuthenticationM
                     Collections.singletonList(new SimpleGrantedAuthority("ROLE_USER"))
             ));
         } else {
-            return Mono.error(new BadCredentialsException("custom failed"));
+            return Mono.error(new BadCredentialsException("Invalid token"));
         }
     }
 }

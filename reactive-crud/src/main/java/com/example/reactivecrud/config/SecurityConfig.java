@@ -9,8 +9,6 @@ import org.springframework.security.config.web.server.SecurityWebFiltersOrder;
 import org.springframework.security.config.web.server.ServerHttpSecurity;
 import org.springframework.security.web.server.SecurityWebFilterChain;
 import org.springframework.security.web.server.authentication.AuthenticationWebFilter;
-import org.springframework.security.web.server.context.WebSessionServerSecurityContextRepository;
-
 @Configuration
 @EnableWebFluxSecurity
 public class SecurityConfig {
@@ -30,7 +28,6 @@ public class SecurityConfig {
         AuthenticationWebFilter jwtAuthenticationWebFilter = new AuthenticationWebFilter(reactiveAuthenticationManager);
         jwtAuthenticationWebFilter.setServerAuthenticationConverter(authenticationConverter);
         jwtAuthenticationWebFilter.setAuthenticationFailureHandler(authenticationFailureHandler);
-//        jwtAuthenticationWebFilter.setSecurityContextRepository(new WebSessionServerSecurityContextRepository());
         return jwtAuthenticationWebFilter;
     }
 
