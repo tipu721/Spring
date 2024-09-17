@@ -3,3 +3,6 @@ spring:
     url: r2dbc:postgresql://localhost:5432/reactive-crud
     username: postgres
     password: root
+logging:
+  level:
+    root: trace
